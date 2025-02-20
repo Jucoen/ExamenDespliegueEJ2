@@ -1,9 +1,9 @@
 FROM mysql:latest
 
-ENV MYSQL_ROOT_PASSWORD=concesionario1234
+ENV MYSQL_ROOT_PASSWORD=contrasenyaRoot
 ENV MYSQL_DATABASE=concesionario
-ENV MYSQL_USER=utilitario
-ENV MYSQL_PASSWORD=concesionario1234
+ENV MYSQL_USER=usuario1
+ENV MYSQL_PASSWORD=contrasenyaUsuario1
 
 
 COPY concesionario.sql /docker-entrypoint-initdb.d/
