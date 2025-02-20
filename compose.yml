@@ -3,10 +3,10 @@
     image: jumice93/mi_concesionario:v1
     container_name: contenedorMIConcesionario
     environment:
-      MYSQL_ROOT_PASSWORD: contrasenyaRoot
+      MYSQL_ROOT_PASSWORD: concesionario1234
       MYSQL_DATABASE: concesionario
-      MYSQL_USER: usuario1
-      MYSQL_PASSWORD: contrasenyaUsuario1
+      MYSQL_USER: utilitario
+      MYSQL_PASSWORD: utilitario1234
     ports:
       - "3306:3306"
   php:
@@ -22,7 +22,7 @@
     container_name: contenedorPhpMyAdmin
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: contrasenyaRoot
+      MYSQL_ROOT_PASSWORD: concesionario1234
     ports:
       - "8081:80"
     depends_on:
