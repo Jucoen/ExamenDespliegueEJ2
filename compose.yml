@@ -22,7 +22,7 @@
     container_name: contenedorPhpMyAdmin
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: contrasenyaRoot
+      MYSQL_ROOT_PASSWORD: concesionario1234
     ports:
       - "8081:80"
     depends_on:
